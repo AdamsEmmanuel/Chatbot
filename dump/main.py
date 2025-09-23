@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from dump.config import settings
-from dump.database import engine, get_db
-import dump.models as models
+from config import settings
+from database import engine, get_db
+import modelsodels
 from routers import users, posts
 
 # Create database tables

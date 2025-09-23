@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import and_
 from typing import List, Optional
-import dump.models as models
-import dump.schemas as schemas
+import modelsodels
+import schemas as schemas
 
 # User CRUD operations
 def get_user(db: Session, user_id: int) -> Optional[models.User]:

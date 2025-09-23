@@ -3,11 +3,11 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func, desc
 from typing import List, Dict, Any
 from datetime import datetime, timedelta
-from dump.database import get_db
-from dump.schemas import UserResponse, MessageResponse
-from dump.crud import get_users, get_all_messages
+from database import get_db
+from schemas import UserResponse, MessageResponse
+from crud import get_users, get_all_messages
 from auth import get_current_admin_user
-from dump.models import User, Message, Session as ChatSession
+from models import User, Message, Session as ChatSession
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 

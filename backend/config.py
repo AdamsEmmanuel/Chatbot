@@ -7,7 +7,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     # Database
-    database_url: str = os.getenv("DATABASE_URL", "mysql+pymysql://chatbot_user:chatbot_password@localhost:3306/chatbot_db")
+    database_url: str = os.getenv("DATABASE_URL", "mysql+pymysql://root:@localhost:3306/chatbot_db")
     
     # JWT
     secret_key: str = os.getenv("SECRET_KEY", "your-super-secret-jwt-key-change-this-in-production")

@@ -8,9 +8,9 @@ class Settings:
     # Database settings
     DB_HOST: str = os.getenv("DB_HOST", "localhost")
     DB_PORT: int = int(os.getenv("DB_PORT", "3306"))
-    DB_USER: str = os.getenv("DB_USER", "")
+    DB_USER: str = os.getenv("DB_USER", "root")
     DB_PASSWORD: str = os.getenv("DB_PASSWORD", "")
-    DB_NAME: str = os.getenv("DB_NAME", "")
+    DB_NAME: str = os.getenv("DB_NAME", "chatbot_db")
     
     # Application settings
     APP_HOST: str = os.getenv("APP_HOST", "0.0.0.0")

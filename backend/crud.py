@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
-from dump.models import User, Message, Session as ChatSession
-from dump.schemas import UserCreate, MessageCreate, SessionCreate
+from models import User, Message, Session as ChatSession
+from schemas import UserCreate, MessageCreate, SessionCreate
 from auth import get_password_hash
 from typing import List, Optional
 

@@ -2,10 +2,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy import text
-from dump.database import engine, get_db
-from dump.models import Base
+from database import engine, get_db
+from models import Base
 from routers import auth, chat, admin
-from dump.config import settings
+from config import settings
 import logging
 
 # Configure logging
